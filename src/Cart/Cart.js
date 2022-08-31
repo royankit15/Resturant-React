@@ -15,7 +15,7 @@ const Cart = (props) => {
 })
     
     const cartItemRemoveHandler = (item) => {
-        if(item.quantity > 0 ){
+        if(item.quantity > 1 ){
             cartContext.addItem({...item,quantity:-1})
             }
             else
