@@ -11,7 +11,7 @@ const Cart = (props) => {
     const hasItems=cartContext.items.length>0;
 
     cartContext.items.forEach(item =>{
-        (totalAmount= totalAmount+ (item.price)).toFixed(2);
+        Math.floor(totalAmount= totalAmount+ (item.price));
 })
     
     const cartItemRemoveHandler = (item) => {
