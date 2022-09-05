@@ -19,7 +19,7 @@ const CartProvider = (props) => {
   };
 
   const removeItemFromCartHandler = (item) => {
-    console.log("remove item",items);
+    console.log("remove item", items);
     const newItemArray = [...items];
     newItemArray.forEach((element, index) => {
       if (item.id === element.id) {
